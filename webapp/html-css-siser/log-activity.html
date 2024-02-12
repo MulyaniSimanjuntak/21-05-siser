@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Riwayat Aktivitas</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <style>
+        .box{
+          background: #f7f7f7;
+          width: auto;
+          border: 4px solid black;
+          padding: 20px;
+          margin: 5px;
+          }
+      
+        .button {
+          background-color: #4CAF50; /* Green */
+          border: none;
+          color: white;
+          padding: 20px 90px;
+          text-align: right;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 20px;
+        }
+
+        h1{
+          text-indent: 20mm;
+        }
+
+        table, th, td {
+          border:1px solid rgb(148, 148, 148);
+          padding: 10px;
+        }
+        </style> 
+      </head>
+  <body>
+      <div class="container">
+    <nav style="background: #1894EC;" class=" navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <h1 style="color:#ffffff;">Siser</h1>
+            <h6 style="color:#ffffff;">Sistem Informasi Sertifikat Elektronik</h6>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav" style="margin-left: 150px ;font-size: 18px; text-align: center;">
+              <a style="color:#ffffff;" href="#">Home</a> &nbsp;&nbsp;
+              <a style="color:#ffffff;" href="#">Events</a> &nbsp;&nbsp;
+              <a  style="color:#ffffff;" href="#">More Information</a>
+              
+              <form class="d-flex" style="margin-left: 250px;">
+                <p>
+                    <i style="color:#ffffff; margin-right: 4mm" class="far fa-bell  fa-1x"></i>
+                    <i style="color:#ffffff; margin-right: 4mm" class="far fa-user  fa-1x"></i>
+                </p>
+                <div class="dropdown">
+                    <p style="color:#ffffff;" class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sasuke
+                    </p>
+                  
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Pengaturan</a></li>
+                      <li><a class="dropdown-item" href="#">Log Out</a></li>
+                    </ul>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </head>
+
+    <br><br></br>
+      <h1>Log Activity</h1>
+      <div style="position: absolute; margin-left: 10cm; margin-top: -1cm;">
+          <input type="text" id="phone" name="phone" placeholder="Masukkan tanggal">
+          <input type="submit" value="Filter">
+          <input type="text" id="phone" name="phone" placeholder="Masukkan username" style="margin-left: 4cm;">
+          <input type="submit" value="Filter">
+      </div>
+      <div>
+        <br>
+        <table style="width:70%; position: absolute; margin-left: 2cm;">
+          <tr style="background-color: #007bff; color: white; text-align: center;">
+            <th>Tanggal & Waktu</th>
+            <th>Nama Aktivitas</th>
+            <th>Nama User</th>
+          </tr>
+          <tr>
+            <td>2021-10-05 04:28:18</td>
+            <td>Login</td>
+            <td>admin</td>
+          </tr>
+          <tr>
+            <td>2021-10-05 04:28:45</td>
+            <td>Logout</td>
+            <td>admin</td>
+          </tr>
+          <tr>
+            <td>2021-10-06 13:11:25</td>
+            <td>Login</td>
+            <td>nixon</td>
+          </tr>
+          <tr>
+            <td>2021-10-06 13:11:33</td>
+            <td>Events Participate</td>
+            <td>nixon</td>
+          </tr>
+          <tr>
+            <td>2021-10-06 13:12:28	</td>
+            <td>Logout</td>
+            <td>nixon</td>
+          </tr>
+        </table>
+        
+      </div>
+    </body>
+</html>
